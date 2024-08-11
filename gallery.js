@@ -117,12 +117,10 @@ window.onload = () => {
     window.location.href = link;
   });
 
+  // BGM
   const playButton = document.getElementById("playButton");
   const audio = document.getElementById("bgm");
-
-  // BGM
   playButton.src = "img/play.png"; // 초기 상태는 play.png
-
   playButton.addEventListener("click", function () {
     if (audio) {
       // 현재 오디오가 재생 중인지 여부를 확인
